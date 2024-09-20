@@ -9,14 +9,9 @@ import avatar from "../../assets/Avatar.png";
 // import { TiSocialLinkedinCircular } from "react-icons/ti";
 const MeetingCard = () => {
   return (
-    <Box className="bg-primary-100 text-white !h-[200px] rounded-xl p-6">
-      <Flex align="start" justify="space-between">
-        <Flex
-          gap={10}
-          justify="center"
-          align="start"
-          // className="border-2 border-red-400"
-        >
+    <Box className="bg-primary-100 text-white rounded-xl p-6 shadow-md">
+      <Flex align="start" justify="space-between" wrap>
+        <Flex gap={10} justify="center" align="start" wrap>
           <Avatar
             size={64}
             src={avatar}
@@ -43,14 +38,14 @@ const MeetingCard = () => {
         </Flex>
 
         <Flex vertical>
-          <Text className="text-white text-md">Date</Text>
+          <Text className="text-white text-md font-semibold">Date</Text>
           <Text className="text-white text-md">Thursday, 15 August</Text>
         </Flex>
       </Flex>
       <Flex justify="space-between" align="start">
         <div></div>
         <Flex vertical>
-          <Text className="text-white text-md">Meeting Time</Text>
+          <Text className="text-white text-md font-semibold">Meeting Time</Text>
           <Text className="text-white text-md">10:10 AM - 10:55 AM</Text>
         </Flex>
       </Flex>
@@ -60,7 +55,7 @@ const MeetingCard = () => {
         <span>
           <Tag
             color={"green"}
-            className="px-4 py-1 font-semibold rounded-full text-[14px]"
+            className="px-4 py-1 font-semibold rounded-full text-[14px] cursor-pointer"
           >
             Internal meeting
           </Tag>
@@ -68,9 +63,9 @@ const MeetingCard = () => {
         </span>
 
         <Flex gap={5} align="center">
-          <PiInstagramLogoFill size={26} />
-          <SiFacebook size={24} />
-          <SiLinkedin size={24} />
+          <PiInstagramLogoFill className="cursor-pointer" size={26} />
+          <SiFacebook className="cursor-pointer" size={24} />
+          <SiLinkedin className="cursor-pointer" size={24} />
         </Flex>
       </Flex>
     </Box>

@@ -11,14 +11,13 @@ const GeneralTable = ({
   loading: boolean;
 }) => {
   return (
-    <div className="datatable" style={{ overflowX: "auto", width: "100%" }}>
+    <div className="!w-full">
       <Table
         columns={columns}
         dataSource={data}
-        // className="datatable"
         pagination={false}
         loading={loading}
-        scroll={{ x: true }}
+        scroll={{ x: 1000 }}
       />
     </div>
   );

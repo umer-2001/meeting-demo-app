@@ -6,7 +6,7 @@ const { Text, Title } = Typography;
 
 const AttendanceCard = () => {
   return (
-    <Box className="bg-bg-100 text-white !h-[200px] rounded-xl p-6">
+    <Box className="bg-bg-100 text-white rounded-xl p-7 shadow-md  ">
       {/* Stats */}
       <Flex justify="space-between">
         {/* invited */}

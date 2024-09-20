@@ -9,16 +9,28 @@ html {
 .ant-btn:hover {
   background-color: #2f88ff !important;
 }
-
-.datatable {
-  border: 1px solid #3a3a3a !important;
-  width: 100% !important;
-  @media screen and (min-width: 1400px) {
-    width: 100% !important;
-    max-width: 800px !important;
-    overflow-x: auto !important;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f88ff;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4290f6;
+}
+
 .ant-table-thead .ant-table-cell {
   background-color: #292929 !important;
   color: #fff !important;
@@ -29,4 +41,33 @@ html {
   background-color: #1f1f1f !important;
   color: #fff !important;
   border-bottom: 1px solid #3a3a3a !important;
+}
+.ant-select-selector {
+  background-color: #292929 !important;
+}
+.ant-select-selection-item {
+  color: #fff !important;
+}
+.ant-select-selection-item {
+  background-color: #292929 !important;
+}
+.ant-select-dropdown {
+  background-color: #292929 !important; /* Custom background color for dropdown */
+}
+.ant-select-item-option-active {
+  background-color: #333333 !important; /* Custom background when hovering on an option */
+}
+
+.ant-select-item-option-selected:hover {
+  background-color: #292929 !important; /* Custom background color for dropdown */
+  opacity: 30 !important;
+}
+.datatable {
+  border: 1px solid #3a3a3a !important;
+}
+@media screen and (max-width: 1400px) {
+  .datatable {
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
 }

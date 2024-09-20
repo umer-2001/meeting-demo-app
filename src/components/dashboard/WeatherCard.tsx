@@ -6,7 +6,7 @@ import cloud from "../../assets/cloud.png";
 
 const WeatherCard = () => {
   return (
-    <Box className="bg-bg-100 text-white !h-[200px] rounded-xl p-6">
+    <Box className="bg-bg-100 text-white  rounded-xl p-6 shadow-md">
       <Flex justify="space-between" align="center">
         <Text className="text-white text-md">Seattle,WA,USA</Text>
         <span className="flex items-center ">

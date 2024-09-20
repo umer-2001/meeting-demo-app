@@ -12,7 +12,7 @@ const DashboardLayout = () => {
         <Aside />
         <Flex vertical className="pt-4 h-screen flex-1 px-2">
           <Box className="w-full h-full overflow-x-hidden overflow-y-hidden ">
-            <Box className="px-4">
+            <Box className="px-4 hidden md:block">
               <Navbar />
             </Box>
             <Box

@@ -33,8 +33,8 @@ const SemiGuage = () => {
             show: true,
           },
           value: {
-            offsetY: -42,
-            fontSize: "22px",
+            offsetY: -36,
+            fontSize: "18px",
             color: "#fff",
           },
         },
