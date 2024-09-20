@@ -17,7 +17,7 @@ const DashboardLayout = () => {
             </Box>
             <Box
               style={{ height: "calc(100vh - 110px)" }}
-              className={`overflow-x-hidden mt-2 pr-4 sm:pr-2 pl-4`}
+              className={`overflow-x-hidden bg-secondary-100     border-0 border-red-400 mx-4 my-4 rounded-lg p-6`}
             >
               <Outlet />
             </Box>

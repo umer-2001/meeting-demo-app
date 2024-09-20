@@ -9,3 +9,24 @@ html {
 .ant-btn:hover {
   background-color: #2f88ff !important;
 }
+
+.datatable {
+  border: 1px solid #3a3a3a !important;
+  width: 100% !important;
+  @media screen and (min-width: 1400px) {
+    width: 100% !important;
+    max-width: 800px !important;
+    overflow-x: auto !important;
+  }
+}
+.ant-table-thead .ant-table-cell {
+  background-color: #292929 !important;
+  color: #fff !important;
+  border-color: "yellow" !important;
+  border-bottom: 1px solid #3a3a3a !important;
+}
+.ant-table-tbody .ant-table-cell {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+  border-bottom: 1px solid #3a3a3a !important;
+}
